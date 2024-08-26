@@ -35,7 +35,10 @@ jobs:
           sudo mv hugo /usr/local/bin 
 
       - name: 🛠️ Build
-        run: hugo
+        run: |
+        pwd
+        ls -al
+        hugo
 
       - name: 🚛 Upload Artifact
         uses: actions/upload-pages-artifact@v1
