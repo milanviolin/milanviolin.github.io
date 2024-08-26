@@ -36,9 +36,9 @@ jobs:
 
       - name: 🛠️ Build
         run: |
-        pwd
-        ls -al
-        hugo
+          pwd
+          ls -al
+          hugo
 
       - name: 🚛 Upload Artifact
         uses: actions/upload-pages-artifact@v1
